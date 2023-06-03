@@ -36,5 +36,7 @@ The four numbers in the coordinates tuple **(x, y, w, h)** represent the followi
 
 In summary, this code combines object tracking, line crossing detection, and counting using a tracker algorithm. It annotates the video frames with bounding boxes, tracking IDs, and count information, providing visual feedback on the movement and counts of objects in the video.
 
+![counting](https://github.com/12194916/Tracking_and_counting_coordinatess_objectSizes_with_yolov8/blob/main/counting.gif)
+
 
 
