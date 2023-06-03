@@ -20,7 +20,7 @@ The four numbers in the coordinates tuple **(x, y, w, h)** represent the followi
 
 
 2.**Counting.**
--This code is designed to track and count objects using a tracker algorithm. It utilizes a BYTETracker instance for object tracking and a LineCounter instance to keep track of objects crossing a specific line in the video frame.
+-This code combines object tracking, line crossing detection, and counting using a tracker algorithm. It annotates the video frames with bounding boxes, tracking IDs, and count information, providing visual feedback on the movement and counts of objects in the video.
 
 -The code starts by initializing the BYTETracker and creating a VideoInfo instance to gather information about the video. It then defines a frame generator function to read frames from the source video.
 
@@ -32,9 +32,7 @@ The four numbers in the coordinates tuple **(x, y, w, h)** represent the followi
 
 -The frame is then annotated with bounding boxes and labels using BoxAnnotator, and the line and counting information are annotated using LineCounterAnnotator. The annotated frame is written to the target video file using a VideoSink.
 
--The process repeats for each frame in the video until the end is reached. By the end, the resulting video contains annotated bounding boxes, object tracking IDs, and count information for objects crossing the specified line.
 
-In summary, this code combines object tracking, line crossing detection, and counting using a tracker algorithm. It annotates the video frames with bounding boxes, tracking IDs, and count information, providing visual feedback on the movement and counts of objects in the video.
 
 ![counting](https://github.com/12194916/Tracking_and_counting_coordinatess_objectSizes_with_yolov8/blob/main/counting.gif)
 
